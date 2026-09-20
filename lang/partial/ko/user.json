@@ -11,7 +11,6 @@
     "posts_count": "게시글",
     "comments_count": "댓글",
     "recent_posts": "최근 게시글",
-    "posts_suffix": "님의 작성글",
     "total_posts": "총 {{count}}개",
     "no_posts": "작성한 게시글이 없습니다.",
     "view_all": "전체보기",

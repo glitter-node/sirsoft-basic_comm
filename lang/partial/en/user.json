@@ -11,7 +11,6 @@
     "posts_count": "Posts",
     "comments_count": "Comments",
     "recent_posts": "Recent Posts",
-    "posts_suffix": "'s Posts",
     "total_posts": "Total {{count}} posts",
     "no_posts": "No posts yet.",
     "view_all": "View All",

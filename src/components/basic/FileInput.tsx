@@ -106,7 +106,7 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
         <Button
           type="button"
           onClick={handleClear}
-          className="p-1 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200"
+          className="p-1 text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-200"
           aria-label="Clear file"
         >
           <Svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

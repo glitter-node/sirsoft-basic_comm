@@ -40,7 +40,9 @@
     "report": "Blinded due to reports",
     "admin": "Blinded by administrator",
     "system": "Blinded by system",
-    "auto_hide": "Blinded due to reports"
+    "auto_hide": "Blinded due to reports",
+    "user": "Blinded due to direct user deletion",
+    "cascade": "Blinded due to cascading deletion from the parent post"
   },
   "all_boards": {
     "title": "All Boards",

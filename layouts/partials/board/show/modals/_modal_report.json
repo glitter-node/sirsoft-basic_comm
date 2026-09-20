@@ -41,7 +41,7 @@
                   "props": {
                     "name": "info-circle",
                     "size": "lg",
-                    "className": "text-yellow-600 dark:text-yellow-500 flex-shrink-0 mt-0.5"
+                    "className": "text-yellow-700 dark:text-yellow-500 flex-shrink-0 mt-0.5"
                   }
                 },
                 {

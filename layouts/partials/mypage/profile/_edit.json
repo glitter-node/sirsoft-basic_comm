@@ -774,7 +774,7 @@
                             "name": "language",
                             "value": "{{user.data?.language ?? ''}}",
                             "className": "w-full",
-                            "options": "{{[{ label: $t('mypage.profile.language_placeholder'), value: '' }].concat((_global.appConfig?.supportedLocales ?? []).map(l => ({ value: l, label: $t('languages.' + l) })))}}"
+                            "options": "{{[{ label: $t('mypage.profile.language_placeholder'), value: '' }].concat((_global.appConfig?.supportedLocales ?? []).map(l => ({ value: l, label: _global.appConfig?.localeNames?.[l] ?? l })))}}"
                           }
                         },
                         {

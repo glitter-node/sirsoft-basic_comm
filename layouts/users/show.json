@@ -283,12 +283,12 @@
                                 "type": "basic",
                                 "name": "H2",
                                 "props": {
-                                  "className": "text-2xl font-bold text-gray-400 dark:text-gray-500 line-through"
+                                  "className": "text-2xl font-bold text-gray-500 dark:text-gray-500 line-through"
                                 },
                                 "responsive": {
                                   "portable": {
                                     "props": {
-                                      "className": "text-xl font-bold text-gray-400 dark:text-gray-500 line-through"
+                                      "className": "text-xl font-bold text-gray-500 dark:text-gray-500 line-through"
                                     }
                                   }
                                 },
