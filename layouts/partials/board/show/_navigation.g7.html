@@ -1,0 +1,37 @@
+<partial description="게시글 상단 네비게이션. 목록으로 버튼 + 게시판 이름 + 이전글/다음글 버튼">
+  <!-- 상단 네비게이션 버튼 -->
+  <div class="flex items-center justify-between mb-6">
+    <!-- 목록으로 버튼 -->
+    <button class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-all shadow-sm cursor-pointer">
+      <on type="click">
+        <navigate path="/board/{{route.slug}}"/>
+      </on>
+      <icon name="list" size="sm"/>
+      <span>$t:board.back_to_list</span>
+    </button>
+    <!-- 게시판 이름 (가운데) -->
+    <span class="text-lg font-semibold text-gray-900 dark:text-white">{{post?.data?.board?.name ?? ''}}</span>
+    <div class="flex items-center gap-2">
+      <!-- 이전글 버튼 - 아이콘 + 텍스트 -->
+      <button data-if="{{navigation?.data?.prev?.id}}" class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-all shadow-sm cursor-pointer">
+        <on type="click">
+          <navigate path="/board/{{route.slug}}/{{navigation.data.prev.id}}">
+            <query del="{{query.del ?? ''}}"/>
+          </navigate>
+        </on>
+        <icon data-type="composite" name="chevron-left" size="sm"/>
+        <span>$t:board.prev</span>
+      </button>
+      <!-- 다음글 버튼 - 아이콘 + 텍스트 -->
+      <button data-if="{{navigation?.data?.next?.id}}" class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-all shadow-sm cursor-pointer">
+        <on type="click">
+          <navigate path="/board/{{route.slug}}/{{navigation.data.next.id}}">
+            <query del="{{query.del ?? ''}}"/>
+          </navigate>
+        </on>
+        <span>$t:board.next</span>
+        <icon data-type="composite" name="chevron-right" size="sm"/>
+      </button>
+    </div>
+  </div>
+</partial>
